@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="lms.controller.AvgCostController"
+            prefHeight="400.0" prefWidth="600.0">
+    <top>
+        <VBox style="-fx-background-color: #3a3a5c; -fx-padding: 12;">
+            <Label text="Average Book Cost"
+                   style="-fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold;"/>
+            <Label text="Calculates the average price of all books in the library."
+                   style="-fx-text-fill: #ccccdd; -fx-font-size: 12px;"/>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox spacing="20" style="-fx-padding: 30;" alignment="CENTER">
+            <Button text="Calculate Average Cost" onAction="#onCalculate"
+                    style="-fx-background-color: #4f86c6; -fx-text-fill: white;
+                           -fx-font-size: 14px; -fx-font-weight: bold;
+                           -fx-padding: 10 24;"/>
+
+            <Label fx:id="totalBooksLabel"  text="" style="-fx-font-size: 13px;"/>
+            <Label fx:id="totalCostLabel"   text="" style="-fx-font-size: 13px;"/>
+            <Label fx:id="avgCostLabel"     text=""
+                   style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #3a3a5c;"/>
+        </VBox>
+    </center>
+
+</BorderPane>
